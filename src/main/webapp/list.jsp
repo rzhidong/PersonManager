@@ -47,13 +47,13 @@
 		<table class="table table-bordered table-striped table-hover">
 			<thead>
 				<tr class="info">
-					<th>ID</th>
-					<th>用户名</th>
-					<th>密码</th>
-					<th>性别</th>
-					<th>邮箱</th>
-					<th>电话</th>
-					<th>操作</th>
+					<th style="text-align: center;">ID</th>
+					<th style="text-align: center;">用户名</th>
+					<th style="text-align: center;">密码</th>
+					<th style="text-align: center;">性别</th>
+					<th style="text-align: center;">邮箱</th>
+					<th style="text-align: center;">电话</th>
+					<th style="text-align: center;">操作</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -62,12 +62,12 @@
 						<c:forEach var="personEnity" items="${pageBean.pageData }"
 							varStatus="vs">
 							<tr>
-								<td>${personEnity.id }</td>
-								<td>${personEnity.userName }</td>
-								<td>${personEnity.passWord }</td>
-								<td>${personEnity.sex }</td>
-								<td>${personEnity.email }</td>
-								<td>${personEnity.phone }</td>
+								<td align="center">${personEnity.id }</td>
+								<td align="center">${personEnity.userName }</td>
+								<td align="center">${personEnity.passWord }</td>
+								<td align="center">${personEnity.sex }</td>
+								<td align="center">${personEnity.email }</td>
+								<td align="center">${personEnity.phone }</td>
 								<td align="center"><a
 									href="manager/ViewPerson?id=${personEnity.id }"
 									class="btn btn-success"> <span
@@ -119,7 +119,7 @@
 							<div class="form-group">
 								<label class="control-label col-lg-offset-4 col-lg-1">当前页</label>
 								<div class="col-lg-1">
-									<input type="text" value="${pageBean.currentPage }"
+									<input type="number" value="${pageBean.currentPage }"
 									class="form-control" name="currentPage" maxlength="3">
 								</div>
 								<div class="col-lg-1">
