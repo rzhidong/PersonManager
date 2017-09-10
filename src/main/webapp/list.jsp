@@ -115,10 +115,17 @@
 				</tr>
 				<tr>
 					<td colspan="7" align="center">
-						<form action="servlet/PageServlet">
-							<input type="text" value="${pageBean.currentPage }"
-								name="currentPage" maxlength="3"> <input type="submit"
-								value="go">
+						<form action="servlet/PageServlet" class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-lg-offset-4 col-lg-1">当前页</label>
+								<div class="col-lg-1">
+									<input type="text" value="${pageBean.currentPage }"
+									class="form-control" name="currentPage" maxlength="3">
+								</div>
+								<div class="col-lg-1">
+									<input type="submit" class="btn btn-primary form-control" value="go">
+								</div>
+							</div>
 						</form>
 					</td>
 				</tr>
